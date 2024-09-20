@@ -12,11 +12,11 @@
 		document.getElementById("text").innerHTML += "<br>";
 		document.getElementById("text").innerHTML += "2:"+ player2;
 		player1 = player1 + 1;
-		    if (player1 > 99)
+		    if (player1 > 29)
 	        {
                document.body.style.backgroundColor = "#FEEEED";
 	        }
-	        else if (player2 > 99)
+	        else if (player2 > 29)
 	        {
 	           document.body.style.backgroundColor = "#57B6D0";
 	        }
@@ -27,11 +27,11 @@
 		document.getElementById("text").innerHTML += "<br>";
     	document.getElementById("text").innerHTML += "2:"+ player2;
 		player2 = player2 + 1;
-		    if (player1 > 99)
+		    if (player1 > 29)
 	        {
 	           document.body.style.backgroundColor = "#FEEEED";
 	        }
-	        else if (player2 > 99)
+	        else if (player2 > 29)
 	        {
 	           document.body.style.backgroundColor = "#57B6D0";
 	        }
@@ -40,7 +40,16 @@
 
 <!–--------- CSS TODO: 請套用一種想要的按鈕(button)樣式 –--------->
 <style>
-
+    @font-face
+	{
+       font-family:"粉圓體";
+       src: url(jf-openhuninn-2.1.TTF);
+    }
+    body
+	{
+        font-family:粉圓體;
+    }
+	
 .button-55 {
   align-self: center;
   background-color: #fff;
