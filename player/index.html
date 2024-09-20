@@ -1,0 +1,67 @@
+<button onClick = "change1()" class = "button-55" >1</button>
+<button onClick = "change2()" class = "button-55" >2</button>
+<div id = "text"></div>
+
+<!–--------- JS TODO: 請修改為更改背景顏色 –--------->
+<script>
+    let player1 = 0, player2=0;
+    
+    function change1()
+    {
+    	document.getElementById("text").innerHTML = "1:"+ player1;
+		document.getElementById("text").innerHTML += "<br>";
+		document.getElementById("text").innerHTML += "2:"+ player2;
+		player1 = player1 + 1;
+    }
+	    function change2()
+    {   
+		document.getElementById("text").innerHTML = "1號:"+ player1;
+		document.getElementById("text").innerHTML += "<br>";
+    	document.getElementById("text").innerHTML += "2號:"+ player2;
+		player2 = player2 + 1;
+    }
+</script>
+
+<!–--------- CSS TODO: 請套用一種想要的按鈕(button)樣式 –--------->
+<style>
+
+.button-55 {
+  align-self: center;
+  background-color: #fff;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Neucha, sans-serif;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: .75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-55:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button-55:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+</style>
