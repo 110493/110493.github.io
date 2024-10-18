@@ -13,15 +13,6 @@ function drawBall(x, y, r, color)
     ctx.closePath();
 }
 
-// 更新畫布
-function draw()
-{
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-
-
-    // TODO: 如果發生碰撞(畫布寬canvas.width, 畫布高canvas.height)，則改變速度(dx, dy)和顏色(color)
-    // ...
 	for (let i=0; i<N; ++i)
 	{
 	   x[i] = x[i] + dx[i];
@@ -45,6 +36,17 @@ function draw()
 		      [dx[i],dy[i],dx[j],dy[j]] = [dx[j],dy[j],dx[i],dy[i]];
             }
 		}
+
+// 更新畫布
+function draw()
+{
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+
+
+    // TODO: 如果發生碰撞(畫布寬canvas.width, 畫布高canvas.height)，則改變速度(dx, dy)和顏色(color)
+    // ...
+
     requestAnimationFrame(draw);
 	}
 }
