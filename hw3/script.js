@@ -42,7 +42,7 @@ function draw()
 	    {
 	     if ((x[i]-x[j])*(x[i]-x[j]) + (y[i]-y[j])*(y[i]-y[j]) < (r[i]+r[j])*(r[i]+r[j]))
 	        {
-		      [dx[i],dy[i],color[i],dx[j],dy[j],color[j]] = [dx[j],dy[j],color[j],dx[i],dy[i],color[i]];
+		      [dx[i],dy[i],dx[j],dy[j]] = [dx[j],dy[j],dx[i],dy[i]];
             }
 		}
     requestAnimationFrame(draw);
