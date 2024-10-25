@@ -1,7 +1,7 @@
 // 定義變數
 let canvas = document.getElementById("myCanvas");
 let ctx = canvas.getContext("2d");
-let x = 0, y = 0, dx = 2, dy = 2, i = 0, N = 8;
+let x = 0, y = 0, dx = 2, dy = 2, i = 0, N = 24;
 
 // 預載走路圖片
 let walk = [];
